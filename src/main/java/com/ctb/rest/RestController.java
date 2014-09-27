@@ -63,7 +63,7 @@ public class RestController {
 	 @ApiOperation(value = "创建Task", notes = "创建Task",response = String.class)
 	 @ApiResponses(value = { @ApiResponse(code = 400, message = "创建Task失败"),
 	 @ApiResponse(code = 404, message = "创建Task地址无效") })
-	public String create(Task task) {
+	public MessageBean create(Task task) {
 			// 调用JSR303 Bean Validator进行校验, 异常将由RestExceptionHandler统一处理.
 			BeanValidators.validateWithException(validator, task);
 			// 保存任务

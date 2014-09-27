@@ -15,11 +15,18 @@ public class RestMessage  {
 
 	public RestMessage() {}
 	
-	public static String getMessageBean(String code) {
+	public static String getMessageBeanToString(String code) {
 		MessageBean msgBean = new MessageBean();
 		msgBean.setCode(code);
 		msgBean.setError(readValue(code));
 		return  Json.toJson(getMessageBean(code)).toString();
+	}
+	
+	public static MessageBean getMessageBean(String code) {
+		MessageBean msgBean = new MessageBean();
+		msgBean.setCode(code);
+		msgBean.setError(readValue(code));
+		return  msgBean;
 	}
 
 	public static String readValue(String key) {
