@@ -2,11 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.ctb</groupId>
-	<artifactId>test</artifactId>
+	<groupId>cn.mengcms</groupId>
+	<artifactId>oauth2</artifactId>
 	<version>1.0</version>
 	<packaging>war</packaging>
-	<name>ctb demo</name>
+	<name>oauth2</name>
 
 	<properties>
 		<!-- 主要依赖库的版本定义 -->
